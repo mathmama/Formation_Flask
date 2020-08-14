@@ -4,6 +4,10 @@
 	<title> Home Page</title>
 </head>
 <body>
-<center><h1>You Welcome  {{ username }} !!!</h1></center>
+	{% if marks>50 %}
+<center><h1>You Welcome your score is {{ marks }} !!!</h1></center>
+	{% else %}
+<center><h1>sorry your score {{ marks }} is fail!!!</h1></center>
+	{% endif %}
 </body>
 </html>
